@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "banner banner banner"
+  "box1 box2 box3";
+  gap: .75rem;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+.banner-text {
+  grid-area: banner;
+  color: #fff;
+  align-self: end;
+}
